@@ -1,10 +1,11 @@
 package com.exception_study.api.user_account.dto;
 
 import com.exception_study.api.user_account.entity.UserAccount;
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-@AllArgsConstructor
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Getter
 public class UserAccountDto {
     private String userId;

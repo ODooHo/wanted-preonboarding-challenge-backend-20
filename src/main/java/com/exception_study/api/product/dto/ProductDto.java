@@ -4,8 +4,10 @@ import com.exception_study.api.product.entity.Product;
 import com.exception_study.api.user_account.dto.UserAccountDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 
-@Data
+
+@Getter
 @AllArgsConstructor
 public class ProductDto {
     private Long id;

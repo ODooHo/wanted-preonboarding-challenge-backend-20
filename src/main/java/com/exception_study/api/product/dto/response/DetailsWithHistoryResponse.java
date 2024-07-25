@@ -2,13 +2,15 @@ package com.exception_study.api.product.dto.response;
 
 import com.exception_study.api.product.dto.ProductDto;
 import com.exception_study.api.product_order.dto.ProductOrderDto;
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 
 import java.util.List;
 
-@AllArgsConstructor
-@Data
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+@Getter
 public class DetailsWithHistoryResponse {
     private ProductDto product;
     private List<ProductOrderDto> history;

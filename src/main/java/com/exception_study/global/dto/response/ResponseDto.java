@@ -1,10 +1,10 @@
 package com.exception_study.global.dto.response;
 
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-@Getter
-@AllArgsConstructor
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class ResponseDto<T> {
     private String resultCode;
     private T result;

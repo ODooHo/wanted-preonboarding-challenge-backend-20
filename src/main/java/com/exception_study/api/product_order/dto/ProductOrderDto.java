@@ -4,11 +4,13 @@ import com.exception_study.api.product.dto.ProductDto;
 import com.exception_study.api.product_order.entity.ProductOrder;
 import com.exception_study.api.user_account.dto.UserAccountDto;
 
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 
-@AllArgsConstructor
-@Data
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+@Getter
 public class ProductOrderDto {
     private Long id;
 
